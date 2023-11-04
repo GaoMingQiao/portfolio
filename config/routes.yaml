@@ -1,3 +1,20 @@
 index:
   path: /
   controller: App\Controller\HomeController::index
+# config/routes.yaml
+app_admin_produit_new:
+  path: /admin/produit/new
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\AdminProduitController::new
+app_admin_produit_index:
+  path: /admin/produit/index
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\AdminProduitController::index
+app_produit:
+  path: /produit/list
+  # the controller value has the format 'controller_class::method_name'
+  controller: App\Controller\ProduitController::index
+
+  # if the action is implemented as the __invoke() method of the
+  # controller class, you can skip the '::method_name' part:
+  # controller: App\Controller\BlogController

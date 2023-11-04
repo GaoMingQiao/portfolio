@@ -36,36 +36,16 @@
         
         <h2 class="p-5">Projets</h2>
 
+
+        {{ render(controller(
+            'App\\Controller\\ProduitController::index',
+            { }
+        )) }}
+
        
         
-          <div class="row mt-4">
-            <div class="col-md-5 mx-auto text-center">
-                <img class="img-fluid" src="./images/Capture_page_accueil.png" alt="likebijoux" id="imgPortfolio">
-                <h4 class="fs-6 text-uppercase mt-2">Like Bijoux - Site e-commerce-vente de bijoux en ligne avec paiement api stripe</h4>
-                <p class="fst-italic pink">Symfony</p>
-            </div>
-
-            <div class="col-md-5 mx-auto text-center">
-                <img class="img-fluid" src="./images/capturemealdb.png" alt="api randomMealDb" id="imgPortfolio">
-                <h4 class="fs-6 text-uppercase mt-2"> - Api qui permet de récupérer chaque fois un random meal</h4>
-                <p class="fst-italic pink">JavaScript, Ajax, Bootstrap, Api</p>
-            </div>
-
-            <div class="col-md-5 mx-auto text-center">
-                <img class="img-fluid" src="./images/capturePokedex.png" alt="pokedex" id="imgPortfolio">
-                <h4 class="fs-6 text-uppercase mt-2">Pokedex - Api de pokemon</h4>
-                <p class="fst-italic pink">Javascript, Ajax, Css</p>
-            </div>
-
-            <div class="col-md-5 mx-auto text-center">
-                <img class="img-fluid" src="./images/captureportfolio.png" alt="portfolio" id="imgPortfolio">
-                <h4 class="fs-6 text-uppercase mt-2">Ce site </h4>
-                <p class="fst-italic pink">Symfony, Bootstrap</p>
-            </div>
-
-            
-
-        </div>
+          
+        
     </div>
 
 
